@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		 integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="css/stylePage.css" />
+		<title>Nostradamus Chatting App</title>
+	</head>
+	<body>
+		<div class="connection-container">
+			<header class="connection-header">
+				<h1><i class="fab fa-battle-net"></i> Nostradamus Chatting App</h1>
+			</header>
+			<main class="connection-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="nickname">nickname</label>
+						<input
+							type="text"
+							name="nickname"
+							id="nickname"
+							placeholder="Please type your name..."
+							required
+						/>
+					</div>
+					<span>
+					<div class="form-control">
+						<label for="room">Chatroom</label>
+						<select name="room" id="room">
+							<option value="ECE">ECE</option>
+							<option value="CIS">CIS</option>
+							<option value="MATH">MATH</option>
+							<option value="ENG">ENG</option>
+							<option value="RANDOM">RANDOM</option>
+							<option value="BREAK">BREAK</option>
+						</select>
+					</div>
+				</span>
+					<button type="submit" class="button">Enter Chatroom</button>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+     content="width=device-width,
+      initial-scale=1.0" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/stylePage.css" />
+    <title>Nostradamus Chatting App</title>
+  </head>
+  <body>
+    <div class="chatroom-container">
+      <span>
+
+      </span>
+      <header class="chatroom-header">
+        <h1><i class="fab fa-battle-net"></i> Nostradamus App</h1>
+        <a id="exit-button" class="btn">Exit Room</a>
+      </header>
+      <main class="landing-chat">
+        <div class="chatroom-scrollbar">
+          <h3><i class="fas fa-comments"></i> Chatroom Name:</h3>
+          <h2 id="room-name"></h2>
+          <h3><i class="fas fa-users"></i> Users</h3>
+          <ul id="users"></ul>
+        </div>
+        <div class="chatroom-text"></div>
+      </main>
+      <span>
+      <div class="chatform-containerr">
+        <form id="chat-form">
+          <input
+            id="msg"
+            type="text"
+            placeholder="Enter Message"
+            required
+            autocomplete="off"
+          />
+          <button class="button"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+      </div>
+    </div>
+  </span>
+  <script src="js/mainComponent.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+  integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
+  </body>
+  <footer>
+    Nostradamus Chatting App
+  </footer>
+</html>

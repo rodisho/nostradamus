@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+/*Define all colors for base
+ root elements for all pages*/
+:root {
+  --dark-color-a: #9b67fc;
+  --dark-color-b: #a473ff;
+  --light-color: #e6e9ff;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+/*Define button styling*/
+
+.button {
+  color: var(--dark-color-a);
+  border: 0.5;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 4.5px 14.5px;
+  background: var(--light-color);
+}
+
+/* Root class set all attributes*/
+* {
+  padding: 0.5;
+  box-sizing: border-box;
+  margin: 0.5;
+}
+
+/*Anchor elements*/
+a {
+  text-decoration: none;
+}
+
+/* Set styling for the body elements*/
+body {
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15.5px;
+  background: var(--light-color);
+}
+
+/*Define un-organized elements styling*/
+ul {
+  list-style: none;
+}
+
+/* Chat Page style properties */
+.chatroom-container {
+  margin: 30px auto;
+  overflow: hidden;
+  max-width: 1100px;
+  background: #fff;
+}
+
+/* Block below will set the header of the room and style color*/
+.chatroom-header {
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark-color-a);
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.landing-chat {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.chatroom-scrollbar {
+  padding: 20px 20px 60px;
+  overflow-y: scroll;
+  background: var(--dark-color-b);
+  color: rgb(209, 209, 209);
+}
+
+.chatroom-scrollbar h2 {
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10.5px;
+  margin-bottom: 20px;
+}
+
+.chatroom-scrollbar h3 {
+  margin-bottom: 15.5px;
+}
+
+.chatroom-scrollbar ul li {
+  padding: 10px 0;
+}
+
+/*define and set the text style for the chatroom*/
+.chatroom-text {
+  overflow-y: scroll;
+  padding: 30.5px;
+  max-height: 4500px;
+}
+
+/*Define the chat style text*/
+.chatroom-text .message {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: var(--light-color);
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+/*Define the chat style text for meta data*/
+.chatroom-text .message .meta {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--dark-color-b);
+  opacity: 0.7;
+  margin-bottom: 7px;
+}
+
+.chatroom-text .message .meta span {
+  color: rgb(121, 120, 120);
+}
+
+.chatform-containerr {
+  background-color: var(--dark-color-a);
+  padding: 20px 30px;
+}
+
+.chatform-containerr form {
+  display: flex;
+}
+
+.chatform-containerr input[type="text"] {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  flex: 1;
+}
+
+/* Connection page */
+.connection-container {
+  max-width: 500px;
+  margin: 80px auto;
+  color: #fff;
+}
+
+.connection-header {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  text-align: center;
+  padding: 20px;
+  background: var(--dark-color-a);
+}
+
+.connection-main {
+  padding: 30px 40px;
+  background: var(--dark-color-b);
+}
+
+.connection-main p {
+  margin-bottom: 20px;
+}
+
+.connection-main .form-control {
+  margin-bottom: 20px;
+}
+
+.connection-main label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.connection-main input[type="text"] {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.connection-main select {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.connection-main .button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .landing-chat {
+    display: block;
+  }
+
+  .chatroom-scrollbar {
+    display: none;
+  }
+}
